@@ -1,0 +1,128 @@
+<h1>search criteria</h1>
+<style>
+    .flex-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: baseline;
+      text-align: center;
+      margin: 0 auto;
+    }
+  
+    .flex-item {
+      flex-grow: 0;
+    }
+</style>
+  
+<div class="flex-container">
+    <div class="flex-item">
+        <label for="employeeID">employeeID:</label>
+        <input type="text" id="employeeID" name="employeeID" placeholder="">
+    </div>
+  
+    <div class="flex-item">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="">
+    </div>
+  
+    <div class="flex-item">
+        <label for="status">status:</label>
+        <select id="status" name="status">
+            <option value="active">active</option>
+            <option value="inactive">inactive</option>
+        </select>
+    </div>
+</div>
+<br>
+ 
+<div class="flex-container">
+    <div class="flex-item">
+        <label for="First Name">First Name:</label>
+        <input type="text" id="First Name" name="First Name" placeholder="">
+    </div>
+  
+    <div class="flex-item">
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="Last Name" name="Last Name" placeholder="">
+    </div>
+</div>
+
+<div>
+    <button id="Submit">Submit search</button>
+</div>
+<hr>
+<h1>
+    List of employee
+</h1>
+<button id="Add">Add</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Employee ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>status</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Z00001</td>
+        <td>John</td>
+        <td>Wick</td>
+        <td>John.wi.com</td>
+        <td>Active</td>
+        <td><button id="Edit">Edit</button>
+            <button id="Delete">Delete</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Z00002</td>
+        <td>Mary</td>
+        <td>Christmas</td>
+        <td>Mary.ch.com</td>
+        <td>Inactive</td>
+        <td><button id="Edit">Edit</button>
+            <button id="Delete">Delete</button></td>
+    </tr>
+    <tr>
+        <td>Z00003</td>
+        <td>Ken</td>
+        <td>Pupoom</td>
+        <td>Ken.pu</td>
+        <td>Active</td>
+        <td><button id="Edit">Edit</button>
+            <button id="Delete">Delete</button></td>
+    </tr>
+   
+</table>
+
+</body>
+</html>
+
+
+
+
+<router-outlet />
